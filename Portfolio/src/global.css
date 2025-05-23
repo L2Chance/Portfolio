@@ -1,0 +1,63 @@
+/*FUENTES*/
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&display=swap");
+
+@import "tailwindcss";
+@import "tailwindcss-animated";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --blue: #7886c7;
+
+  --dark: #12171e;
+
+  --darkmid: #222831;
+
+  --white: #faf6e9;
+
+  /*Para degradado de fondo*/
+
+  --whitemid: #d9eafd;
+  --skyblue: #7886c7;
+
+  --gray: #bdc3c7;
+  --darkgray: #2c3e50;
+}
+
+p {
+  font-family: "Lexend", sans-serif;
+  transition: all 0.5s ease;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  transition: all 0.5s ease;
+}
+
+h2 {
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 0.5s ease;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  /* Option 2: Linear gradient from --skyblue to --orange (diagonal, top-left to bottom-right) */
+  background: linear-gradient(to bottom right, var(--whitemid), var(--skyblue));
+  background-attachment: fixed;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark body {
+  /* Option 2 (dark mode): Linear gradient from --darkmid to --blackred (diagonal) */
+  background: linear-gradient(to bottom right, var(--darkmid), var(--darkgray));
+  background-attachment: fixed;
+  transition: all 0.3s ease-in-out;
+}

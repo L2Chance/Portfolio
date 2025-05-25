@@ -1,7 +1,3 @@
-import Aptitud from "./aptitud";
-import { RiTeamFill, RiEnglishInput } from "react-icons/ri";
-import { GiNotebook } from "react-icons/gi";
-import { FaUserGear } from "react-icons/fa6";
 import TerminalContainer from "../terminalContainer";
 
 export default function SectionOne() {

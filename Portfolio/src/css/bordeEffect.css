@@ -1,0 +1,65 @@
+.borde-effect {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: solid 2px rgb(141, 141, 141);
+  box-shadow: 0 0 3px 1px rgba(0, 234, 255, 0.7);
+}
+
+.dark .borde-effect {
+  box-shadow: 0 0 3px 1px rgba(255, 85, 85, 0.7);
+}
+
+.borde-effect::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    rgb(255, 0, 247) 0deg,
+    transparent 60deg,
+    transparent 155deg,
+    rgb(0, 255, 247) 180deg,
+    transparent 280deg,
+    transparent 360deg
+  );
+  animation: rotate-light 3s linear infinite;
+  z-index: 0;
+  filter: blur(5px);
+}
+
+.dark .borde-effect::before {
+  background: conic-gradient(
+    from 0deg,
+    rgb(0, 242, 255) 0deg,
+    transparent 60deg,
+    transparent 155deg,
+    rgb(255, 0, 195) 180deg,
+    transparent 280deg,
+    transparent 360deg
+  );
+}
+
+.borde-effect::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: inherit;
+  border-radius: 0.65rem;
+  z-index: 1;
+}
+
+@keyframes rotate-light {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

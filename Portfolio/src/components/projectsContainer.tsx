@@ -8,7 +8,7 @@ export default function ProjectContainer() {
     rounded-2xl border-2
   "
       >
-        Hola
+        Pendiente
       </article>
     </>
   );

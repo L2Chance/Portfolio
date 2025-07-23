@@ -2,7 +2,7 @@ import type { IconType } from "react-icons";
 import "../css/bordeEffect.css";
 
 interface Props {
-  icono: IconType; // Tipo de componente de icono
+  icono: IconType;
   nombre: string;
 }
 
@@ -10,8 +10,8 @@ export default function Tool({ icono: Icono, nombre }: Props) {
   return (
     <div
       className="
-    borde-effect flex flex-col justify-center items-center w-35 h-35 
-    bg-gradient-to-br from-white via-gray-200 to-gray-400 
+    flex flex-col justify-center items-center w-35 h-35 
+    bg-gradient-to-br rounded-2xl from-white via-gray-200 to-gray-400 
     dark:bg-gradient-to-br dark:from-[var(--dark)] dark:via-gray-800 dark:to-gray-900
   "
     >

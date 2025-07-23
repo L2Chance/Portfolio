@@ -5,7 +5,7 @@ export default function SectionOne() {
     <div className="flex flex-col md:flex-row justify-center items-center gap-6 min-h-[85vh] pl-3 pr-3">
       {/* Bloque izquierdo */}
       <div className="flex flex-col justify-center items-center border-2 border-[var(--dark)] dark:border-[var(--white)] text-[var(--white)] p-6 rounded-lg animate-fade-up animate-duration-700 animate-delay-300 gap-4 bg-black/60 w-full md:w-1/2">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl 2xl:text-9xl underline underline-offset-4 text-shadow-black text-shadow-md/40 text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl 2xl:text-6xl underline underline-offset-4 text-shadow-black text-shadow-md/40 text-center">
           Perez Lautaro Ivan
         </h1>
         <span className="flex items-center space-x-2">

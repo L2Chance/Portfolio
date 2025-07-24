@@ -123,7 +123,7 @@ export default function ProjectContainer({
           >
             {/* Contenido textual */}
             <div className="flex flex-col justify-between p-6 w-full md:w-[55%]">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2 relative inline-block w-fit after:block after:h-0.5 after:bg-blue-500 after:absolute after:left-0 after:bottom-0 after:w-full after:scale-x-100 after:transition-transform after:duration-300 hover:after:scale-x-110">
                 {proyecto.titulo}
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">

@@ -55,7 +55,7 @@ export default function SectionTwo({ children }: SectionTwoProps) {
           </div>
         </section>
 
-        <section className="flex flex-col w-[70%] gap-1">
+        <section className="flex flex-col w-[80%] gap-1">
           <TerminalContainer>
             <p>Mis proyectos personales</p>
           </TerminalContainer>

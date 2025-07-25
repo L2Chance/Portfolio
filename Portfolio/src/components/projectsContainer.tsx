@@ -16,7 +16,7 @@ import SentirseBienSpa_imagen_3 from "../assets/SentirseBienSpa/imagen-3.png";
 import SentirseBienSpa_imagen_4 from "../assets/SentirseBienSpa/imagen-4.png";
 import SentirseBienSpa_imagen_5 from "../assets/SentirseBienSpa/imagen-5.png";
 
-interface Proyecto {
+export interface Proyecto {
   titulo: string;
   descripcion: string;
   imagenes: string[];

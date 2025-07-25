@@ -1,5 +1,5 @@
 // App.tsx
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/navbar/navbar";
 import "./global.css";
 import SectionOne from "./components/section-1/sectionOne";
@@ -7,7 +7,9 @@ import SectionTwo from "./components/section-2/sectionTwo";
 import ModalGallery from "./components/ModalGallery";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ProjectContainer from "./components/projectsContainer";
+
+import SectionThree from "./components/section-3/sectionThree";
+import Footer from "./components/footer/Footer";
 
 interface Proyecto {
   titulo: string;
@@ -87,10 +89,7 @@ function App() {
     <>
       <Navbar />
       <SectionOne />
-      <SectionTwo>
-        <ProjectContainer onImageClick={handleImageClick} />
-      </SectionTwo>
-
+      <SectionThree onImageClick={handleImageClick} />
       <ModalGallery
         isOpen={modalState.isOpen}
         onClose={handleCloseModal}
@@ -104,6 +103,8 @@ function App() {
         }
         currentImageIndex={modalState.currentImageIndex}
       />
+      <SectionTwo />
+      <Footer></Footer>
     </>
   );
 }

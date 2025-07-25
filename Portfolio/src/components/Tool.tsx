@@ -1,26 +1,28 @@
 import type { IconType } from "react-icons";
-import "../css/bordeEffect.css";
 
 interface Props {
   icono: IconType;
   nombre: string;
+  color: string;
 }
 
-export default function Tool({ icono: Icono, nombre }: Props) {
+export default function Tool({ icono: Icono, nombre, color }: Props) {
   return (
     <div
       className="
-    flex flex-col justify-center items-center w-35 h-35 
-    bg-gradient-to-br rounded-2xl from-white via-gray-200 to-gray-400 
-    dark:bg-gradient-to-br dark:from-[var(--dark)] dark:via-gray-800 dark:to-gray-900
-  "
+        group relative flex flex-col items-center justify-center w-36 h-44 p-4
+        rounded-2xl shadow-lg transition-transform transform hover:scale-105
+        bg-gradient-to-br from-white via-gray-100 to-gray-300
+        dark:from-gray-800 dark:via-gray-700 dark:to-gray-900
+        border border-gray-300 dark:border-gray-700
+      "
     >
-      <div className="relative z-10 flex flex-col justify-center items-center">
-        <p className="text-green-400 font-bold">{nombre}</p>
-        <div className="flex justify-center items-center w-20 h-20 rounded-full dark:bg-gray-800 bg-gray-400">
-          <Icono size={60} className="text-[var(--dark)] dark:text-white" />
-        </div>
+      <div className="flex items-center justify-center w-20 h-20 rounded-full bg-white dark:bg-gray-800 shadow-md mb-3">
+        <Icono size={50} style={{ color }} />
       </div>
+      <p className="text-sm font-semibold text-gray-800 dark:text-gray-200 text-center">
+        {nombre}
+      </p>
     </div>
   );
 }

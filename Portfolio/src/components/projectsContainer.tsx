@@ -5,10 +5,11 @@ import Mecanografiando_imagen_1 from "../assets/Mecanografiando/imagen-1.png";
 import Mecanografiando_imagen_2 from "../assets/Mecanografiando/imagen-2.png";
 import Mecanografiando_imagen_3 from "../assets/Mecanografiando/imagen-3.png";
 
-import GestorDeTareasNet_imagen_1 from "../assets/GestorDeTareasNET/imagen-1.jpeg";
-import GestorDeTareasNet_imagen_2 from "../assets/GestorDeTareasNET/imagen-2.jpeg";
-import GestorDeTareasNet_imagen_3 from "../assets/GestorDeTareasNET/imagen-3.jpeg";
-import GestorDeTareasNet_imagen_4 from "../assets/GestorDeTareasNET/imagen-4.jpeg";
+import GestorDeTareasNet_imagen_1 from "../assets/GestorDeTareasNET/imagen-1.png";
+import GestorDeTareasNet_imagen_2 from "../assets/GestorDeTareasNET/imagen-2.png";
+import GestorDeTareasNet_imagen_3 from "../assets/GestorDeTareasNET/imagen-3.png";
+import GestorDeTareasNet_imagen_4 from "../assets/GestorDeTareasNET/imagen-4.png";
+import GestorDeTareasNet_imagen_5 from "../assets/GestorDeTareasNET/imagen-5.png";
 
 import SentirseBienSpa_imagen_1 from "../assets/SentirseBienSpa/imagen-1.png";
 import SentirseBienSpa_imagen_2 from "../assets/SentirseBienSpa/imagen-2.png";
@@ -60,6 +61,7 @@ export default function ProjectContainer({
         GestorDeTareasNet_imagen_2,
         GestorDeTareasNet_imagen_3,
         GestorDeTareasNet_imagen_4,
+        GestorDeTareasNet_imagen_5,
       ],
       demo: "",
       codigo: "https://github.com/L2Chance/GestorDeTareas",

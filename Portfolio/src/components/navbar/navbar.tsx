@@ -50,7 +50,7 @@ export default function Navbar() {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/lautaro-perez-468507312/"
+            href="https://www.linkedin.com/in/lautaro2pe/"
             target="_blank"
             rel="noopener noreferrer"
           >

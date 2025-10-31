@@ -17,14 +17,16 @@ import {
   SiBootstrap,
   SiChakraui,
   SiDbeaver,
-  SiKubernetes,
   SiCloudinary,
+  SiNodedotjs,
 } from "react-icons/si";
-import { MdOutlineRestartAlt, MdStorage } from "react-icons/md";
+import { MdOutlineRestartAlt } from "react-icons/md";
 import { TbFileTypeSql } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
-import { MdLibraryBooks } from "react-icons/md";
-import { SiApachemaven } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiDjango } from "react-icons/si";
+
+
 
 export default function SectionTwo() {
   return (
@@ -34,10 +36,37 @@ export default function SectionTwo() {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        <section className="flex flex-col w-[60%] w-max-[1200px]  gap-6">
+        <section className="flex flex-col w-[60%] w-max-[1200px] gap-6">
           <TerminalContainer>
             <p>Algunas tecnologías que manejo</p>
           </TerminalContainer>
+
+          {/* Backend */}
+          <div>
+            <h2
+              className="text-3xl font-extrabold text-gray-800 dark:text-white mb-4 relative pl-4
+              before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2
+              before:h-5 before:w-1 before:bg-blue-500 before:rounded
+              hover:before:bg-blue-600 hover:before:scale-y-110 before:transition-transform before:duration-300"
+            >
+              Backend
+            </h2>
+            <div className="flex flex-wrap justify-center items-center border-2 border-[var(--dark)] dark:border-[var(--white)] text-[var(--white)] p-6 rounded-lg bg-black/60 gap-4">
+              <Tool icono={FaJava} nombre="Java" color="#007396" />
+              <Tool icono={SiSpring} nombre="Spring Boot" color="#6DB33F" />
+              <Tool icono={SiNodedotjs} nombre="Node.js" color="#539E43" />
+              <Tool icono={SiExpress} nombre="Express.js" color="#000000" />
+              <Tool icono={FaPython} nombre="Python" color="#3776AB" />
+              <Tool icono={SiDjango} nombre="Django" color="#092E20" />
+              <Tool
+                icono={MdOutlineRestartAlt}
+                nombre="API REST"
+                color="#10B981"
+              />
+              <Tool icono={TbFileTypeSql} nombre="SQL" color="#F29111" />
+
+            </div>
+          </div>
 
           {/* Frontend */}
           <div>
@@ -69,32 +98,6 @@ export default function SectionTwo() {
             </div>
           </div>
 
-          {/* Backend */}
-          <div>
-            <h2
-              className="text-3xl font-extrabold text-gray-800 dark:text-white mb-4 relative pl-4
-              before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2
-              before:h-5 before:w-1 before:bg-blue-500 before:rounded
-              hover:before:bg-blue-600 hover:before:scale-y-110 before:transition-transform before:duration-300"
-            >
-              Backend
-            </h2>
-            <div className="flex flex-wrap justify-center items-center border-2 border-[var(--dark)] dark:border-[var(--white)] text-[var(--white)] p-6 rounded-lg bg-black/60 gap-4">
-              <Tool icono={FaPython} nombre="Python" color="#3776AB" />
-              <Tool icono={FaJava} nombre="Java" color="#007396" />
-              <Tool icono={SiSpring} nombre="Spring Boot" color="#6DB33F" />
-              <Tool icono={MdStorage} nombre="Hibernate" color="#59666C" />
-              <Tool
-                icono={MdOutlineRestartAlt}
-                nombre="API REST"
-                color="#10B981"
-              />
-              <Tool icono={TbFileTypeSql} nombre="SQL" color="#F29111" />
-              <Tool icono={SiApachemaven} nombre="Maven" color="#C71A36" />
-              <Tool icono={MdLibraryBooks} nombre="Lombok" color="#0F9D58" />
-            </div>
-          </div>
-
           {/* Herramientas / DevOps */}
           <div>
             <h2
@@ -109,7 +112,6 @@ export default function SectionTwo() {
               <Tool icono={FaGitAlt} nombre="Git" color="#F05032" />
               <Tool icono={FaGithub} nombre="GitHub" color="#172d0b" />
               <Tool icono={SiDocker} nombre="Docker" color="#2496ED" />
-              <Tool icono={SiKubernetes} nombre="Kubernetes" color="#326CE5" />
               <Tool icono={SiCloudinary} nombre="Cloudinary" color="#FF6C37" />
               <Tool icono={SiDbeaver} nombre="DBeaver" color="#F05032" />
             </div>

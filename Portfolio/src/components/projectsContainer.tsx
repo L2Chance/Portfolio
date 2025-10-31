@@ -113,6 +113,7 @@ export default function ProjectContainer({
       codigo: "https://github.com/L2Chance/GestorBiblioteca-API",
       tecnologias: [
         "Node",
+        "Express",
         "HTML",
         "CSS",
         "React",

@@ -17,8 +17,10 @@ import {
   SiSqlite,
   SiMongodb,
   SiMariadb,
+  SiExpress,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+
 
 interface TechIconProps {
   tech: string;
@@ -45,6 +47,7 @@ export function TechIcon({ tech }: TechIconProps) {
     ".NET": <SiDotnet className="text-indigo-600" title=".NET" />,
     HTML: <SiHtml5 className="text-orange-600" title="HTML5" />,
     CSS: <SiCss3 className="text-blue-500" title="CSS3" />,
+    Express: <SiExpress className="text-black" title="Express.js" />,
   };
 
   return (

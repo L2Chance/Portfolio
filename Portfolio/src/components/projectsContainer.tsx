@@ -17,6 +17,15 @@ import SentirseBienSpa_imagen_3 from "../assets/SentirseBienSpa/imagen-3.png";
 import SentirseBienSpa_imagen_4 from "../assets/SentirseBienSpa/imagen-4.png";
 import SentirseBienSpa_imagen_5 from "../assets/SentirseBienSpa/imagen-5.png";
 
+import Lecturopolis_imagen_1 from "../assets/Lecturopolis/imagen-1.png"
+import Lecturopolis_imagen_2 from "../assets/Lecturopolis/imagen-2.png"
+import Lecturopolis_imagen_3 from "../assets/Lecturopolis/imagen-3.png"
+import Lecturopolis_imagen_4 from "../assets/Lecturopolis/imagen-4.png"
+
+import NetflixClone_imagen_1 from "../assets/NetflixClone/imagen-1.png"
+import NetflixClone_imagen_2 from "../assets/NetflixClone/imagen-2.png"
+import NetflixClone_imagen_3 from "../assets/NetflixClone/imagen-3.png"
+
 export interface Proyecto {
   titulo: string;
   descripcion: string;
@@ -78,7 +87,7 @@ export default function ProjectContainer({
         SentirseBienSpa_imagen_4,
         SentirseBienSpa_imagen_5,
       ],
-      demo: "https://elcieloenlatierra-spa.onrender.com/home",
+      demo: "",
       codigo: "https://github.com/L2Chance/Elcieloenlatierra_SPA",
       tecnologias: [
         "Python",
@@ -86,6 +95,47 @@ export default function ProjectContainer({
         "HTML",
         "CSS",
         "JavaScript",
+        "Tailwind",
+        "SQLite"
+      ],
+    },
+    {
+      titulo: "Lecturopolis",
+      descripcion:
+        "Aplicación web para la gestión integral de una biblioteca, desarrollada con un enfoque en eficiencia y facilidad de uso. El sistema permite registrar y administrar socios, gestionar el catálogo de libros y llevar un control detallado del historial de préstamos y devoluciones. Cada préstamo se asocia a un socio y un libro, con validación automática de disponibilidad para evitar conflictos de reserva.",
+      imagenes: [
+        Lecturopolis_imagen_1,
+        Lecturopolis_imagen_2,
+        Lecturopolis_imagen_3,
+        Lecturopolis_imagen_4,
+      ],
+      demo: "",
+      codigo: "https://github.com/L2Chance/GestorBiblioteca-API",
+      tecnologias: [
+        "Node",
+        "HTML",
+        "CSS",
+        "React",
+        "Tailwind",
+        "SQLite",
+      ],
+    },
+    {
+      titulo: "Netflix Clone",
+      descripcion:
+        "Clon de la interfaz de Netflix desarrollado con React y TypeScript. Permite explorar un catálogo de películas, ver detalles, agregar favoritas, reproducir trailers y crear nuevas películas mediante un servicio simulado en memoria, sin base de datos.",
+      imagenes: [
+        NetflixClone_imagen_1,
+        NetflixClone_imagen_2,
+        NetflixClone_imagen_3,
+      ],
+      demo: "https://netflix-clone-phi-sepia.vercel.app/",
+      codigo: "https://github.com/L2Chance/NetflixClone",
+      tecnologias: [
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "React",
         "Tailwind",
       ],
     },

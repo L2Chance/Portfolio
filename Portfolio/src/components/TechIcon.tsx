@@ -12,8 +12,12 @@ import {
   SiDotnet,
   SiHtml5,
   SiCss3,
+  SiNodedotjs,
+  SiPostgresql,
+  SiSqlite,
+  SiMongodb,
+  SiMariadb,
 } from "react-icons/si";
-
 import { FaJava } from "react-icons/fa";
 
 interface TechIconProps {
@@ -30,8 +34,13 @@ export function TechIcon({ tech }: TechIconProps) {
     Django: <SiDjango className="text-green-800" title="Django" />,
     Python: <SiPython className="text-yellow-400" title="Python" />,
     SQL: <SiMysql className="text-blue-600" title="SQL (MySQL)" />,
+    MySQL: <SiMysql className="text-blue-600" title="MySQL" />,
+    PostgreSQL: <SiPostgresql className="text-sky-700" title="PostgreSQL" />,
+    SQLite: <SiSqlite className="text-blue-400" title="SQLite" />,
+    MongoDB: <SiMongodb className="text-green-600" title="MongoDB" />,
+    MariaDB: <SiMariadb className="text-blue-500" title="MariaDB" />,
     JavaScript: <SiJavascript className="text-yellow-300" title="JavaScript" />,
-
+    Node: <SiNodedotjs className="text-green-600" title="Node.js" />,
     "C#": <SiSharp className="text-purple-600" title="C#" />,
     ".NET": <SiDotnet className="text-indigo-600" title=".NET" />,
     HTML: <SiHtml5 className="text-orange-600" title="HTML5" />,

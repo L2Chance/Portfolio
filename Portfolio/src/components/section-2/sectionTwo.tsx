@@ -25,8 +25,7 @@ import { TbFileTypeSql } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
-
-
+import { SiNextdotjs } from "react-icons/si";
 
 export default function SectionTwo() {
   return (
@@ -64,7 +63,6 @@ export default function SectionTwo() {
                 color="#10B981"
               />
               <Tool icono={TbFileTypeSql} nombre="SQL" color="#F29111" />
-
             </div>
           </div>
 
@@ -95,6 +93,8 @@ export default function SectionTwo() {
               />
               <Tool icono={SiBootstrap} nombre="Bootstrap" color="#7952B3" />
               <Tool icono={SiChakraui} nombre="ShadCN UI" color="#319795" />
+              <Tool icono={FaReact} nombre="React Native" color="#61DAFB" />
+              <Tool icono={SiNextdotjs} nombre="Next.js" color="#000000" />
             </div>
           </div>
 

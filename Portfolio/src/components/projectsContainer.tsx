@@ -17,14 +17,17 @@ import SentirseBienSpa_imagen_3 from "../assets/SentirseBienSpa/imagen-3.png";
 import SentirseBienSpa_imagen_4 from "../assets/SentirseBienSpa/imagen-4.png";
 import SentirseBienSpa_imagen_5 from "../assets/SentirseBienSpa/imagen-5.png";
 
-import Lecturopolis_imagen_1 from "../assets/Lecturopolis/imagen-1.png"
-import Lecturopolis_imagen_2 from "../assets/Lecturopolis/imagen-2.png"
-import Lecturopolis_imagen_3 from "../assets/Lecturopolis/imagen-3.png"
-import Lecturopolis_imagen_4 from "../assets/Lecturopolis/imagen-4.png"
+import Lecturopolis_imagen_1 from "../assets/Lecturopolis/imagen-1.png";
+import Lecturopolis_imagen_2 from "../assets/Lecturopolis/imagen-2.png";
+import Lecturopolis_imagen_3 from "../assets/Lecturopolis/imagen-3.png";
+import Lecturopolis_imagen_4 from "../assets/Lecturopolis/imagen-4.png";
 
-import NetflixClone_imagen_1 from "../assets/NetflixClone/imagen-1.png"
-import NetflixClone_imagen_2 from "../assets/NetflixClone/imagen-2.png"
-import NetflixClone_imagen_3 from "../assets/NetflixClone/imagen-3.png"
+import NetflixClone_imagen_1 from "../assets/NetflixClone/imagen-1.png";
+import NetflixClone_imagen_2 from "../assets/NetflixClone/imagen-2.png";
+import NetflixClone_imagen_3 from "../assets/NetflixClone/imagen-3.png";
+
+import Cancheala_imagen_1 from "../assets/Cancheala/Cancheala-1.jpg";
+import Cancheala_imagen_2 from "../assets/Cancheala/Cancheala-2.jpg";
 
 export interface Proyecto {
   titulo: string;
@@ -96,7 +99,7 @@ export default function ProjectContainer({
         "CSS",
         "JavaScript",
         "Tailwind",
-        "SQLite"
+        "SQLite",
       ],
     },
     {
@@ -132,13 +135,16 @@ export default function ProjectContainer({
       ],
       demo: "https://netflix-clone-phi-sepia.vercel.app/",
       codigo: "https://github.com/L2Chance/NetflixClone",
-      tecnologias: [
-        "TypeScript",
-        "HTML",
-        "CSS",
-        "React",
-        "Tailwind",
-      ],
+      tecnologias: ["TypeScript", "HTML", "CSS", "React", "Tailwind"],
+    },
+    {
+      titulo: "Cancheala",
+      descripcion:
+        "Proyecto frontend de reserva de canchas deportivas orientado a la gestión de canchas de pádel. La aplicación permite a los usuarios buscar canchas disponibles, realizar reservas y administrar sus turnos de forma simple e intuitiva, incluyendo registro e inicio de sesión. Este proyecto fue desarrollado con el objetivo de profundizar conocimientos en React Native, trabajando con la estructura de la aplicación, manejo de estado y navegación entre pantallas. Además, se integraron servicios de Firebase, utilizando Authentication para la gestión de usuarios y Storage para el almacenamiento de recursos, simulando el funcionamiento de una aplicación real de reservas.",
+      imagenes: [Cancheala_imagen_1, Cancheala_imagen_2],
+      demo: "",
+      codigo: "https://github.com/acevedo-daniel/cancheala-backup",
+      tecnologias: ["TypeScript", "React Native", "Tailwind", "Firebase"],
     },
   ];
 

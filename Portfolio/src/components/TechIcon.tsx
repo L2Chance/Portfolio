@@ -18,9 +18,11 @@ import {
   SiMongodb,
   SiMariadb,
   SiExpress,
+  SiNextdotjs,
+  SiFirebase,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
-
+import { TbBrandReactNative } from "react-icons/tb";
 
 interface TechIconProps {
   tech: string;
@@ -48,6 +50,11 @@ export function TechIcon({ tech }: TechIconProps) {
     HTML: <SiHtml5 className="text-orange-600" title="HTML5" />,
     CSS: <SiCss3 className="text-blue-500" title="CSS3" />,
     Express: <SiExpress className="text-black" title="Express.js" />,
+    "React Native": (
+      <TbBrandReactNative className="text-blue-400" title="React Native" />
+    ),
+    "Next.js": <SiNextdotjs className="text-black" title="Next.js" />,
+    Firebase: <SiFirebase className="text-yellow-500" title="Firebase" />,
   };
 
   return (
